@@ -1,7 +1,5 @@
 package Ejercicio5;
 
-import Ejercicio4.LectorTexto;
-
 import javax.swing.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -11,7 +9,7 @@ public class LectorTexto2 extends JFrame implements FocusListener {
     private JPasswordField campoPassword;
     private static LectorTexto2 ventana;
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         ventana = new LectorTexto2();
         ventana.setVisible(true);
     }
