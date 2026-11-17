@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-public class DetectorDeArrastre extends JFrame{
+public class DetectorDeArrastre extends JFrame {
 
     private static DetectorDeArrastre ventana;
 
@@ -28,8 +28,20 @@ public class DetectorDeArrastre extends JFrame{
                     throw new RuntimeException(ex);
                 }
             }
+
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                System.out.println("Estas moviendo el ratón");
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
         });
 
 
     }
+
+
 }
